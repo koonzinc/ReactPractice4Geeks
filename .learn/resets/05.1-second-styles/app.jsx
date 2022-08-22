@@ -4,23 +4,15 @@ import PropTypes from "prop-types";
 
 const buttonStyles = {
 	//write button styles here
-	backgroundColor: "yellow",
-	color: "black",
-	border: "none",
+
 };
 
 const badgeStyles = {
 	//write the span styles here
-	backgroundColor: "red",
-	color: "white",
-	borderRadius: "50%",
-	width: "16px",
-	height: "16px",
-	marginLeft: "3px",
-	padding: "2px",
+
 };
 
-const Badge = (props) => {
+const Badge = props => {
 	return (
 		<button style={buttonStyles} type="button" className="btn btn-primary">
 			{props.label}
@@ -32,7 +24,7 @@ const Badge = (props) => {
 };
 Badge.propTypes = {
 	label: PropTypes.string,
-	number: PropTypes.string,
+	number: PropTypes.string
 };
 //dont forget to change the label
 ReactDOM.render(<Badge label="Alerts" number="2" />, document.querySelector("#myDiv"));
